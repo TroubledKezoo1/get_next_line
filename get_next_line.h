@@ -5,29 +5,29 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: cbolat <cbolat@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/30 11:42:14 by cbolat            #+#    #+#             */
-/*   Updated: 2022/11/30 11:42:15 by cbolat           ###   ########.fr       */
+/*   Created: 2022/11/30 15:47:18 by cbolat            #+#    #+#             */
+/*   Updated: 2022/11/30 15:52:07 by cbolat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
-# include <unistd.h>
-# include <stdio.h>
-# include <fcntl.h>
-# include <stdlib.h>
-
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 8
+#  define BUFFER_SIZE 4
 # endif
 
+# include <stdio.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include <fcntl.h>
+
 char	*get_next_line(int fd);
-char	*ft_strjoin(char *dest, char *src);
-char	*ft_is_there_new_line(char *str);
-char	*ft_get_current_line(char *str);
-char	*ft_get_new_line(char *str);
-size_t	ft_strlen(char *str);
-char	*ft_read_to_left_str(int fd, char *left_str);
+char	*ft_read_left_to_right(int fd, char *d_line);
+char	*ft_strchr(char *s, int c);
+size_t	ft_strlen(char *s);
+char	*ft_strjoin(char *d_line, char *buff);
+char	*ft_get_line(char *d_line);
+char	*ft_new_dinamic_line(char *d_line);
 
 #endif
