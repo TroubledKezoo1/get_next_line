@@ -18,3 +18,10 @@ read from a file descriptor.
 
 > A good start would be to know what a <a href="https://en.wikipedia.org/wiki/Static_variable"> static variable </a> is.
 
+# Bonus Part
+
+- Your get_next_line() can manage multiple file descriptors at the same time.
+> - Turn in files..
+- get_next_line_bonus.c
+- get_next_line_bonus.h
+- get_next_line_utils_bonus.c
