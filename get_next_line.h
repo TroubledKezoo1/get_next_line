@@ -6,7 +6,7 @@
 /*   By: cbolat <cbolat@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 15:47:18 by cbolat            #+#    #+#             */
-/*   Updated: 2022/11/30 15:52:07 by cbolat           ###   ########.fr       */
+/*   Updated: 2023/10/09 00:37:03 by cbolat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,8 @@
 #  define BUFFER_SIZE 4
 # endif
 
-# include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include <fcntl.h>
 
 char	*get_next_line(int fd);
 char	*ft_read_left_to_right(int fd, char *d_line);
